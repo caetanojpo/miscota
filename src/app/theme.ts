@@ -1,4 +1,4 @@
-import { createSystem, defineConfig } from "@chakra-ui/react";
+import { createSystem, defaultConfig, defineConfig } from "@chakra-ui/react";
 
 const config = defineConfig({
   theme: {
@@ -34,4 +34,4 @@ const config = defineConfig({
   },
 });
 
-export const miscotaSystem = createSystem(config);
+ export default createSystem(defaultConfig, config);
