@@ -2,8 +2,9 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
-import { system } from "@chakra-ui/react/preset";
+
 import { ThemeProvider } from "next-themes";
+import { system } from "./theme";
 
 const emotionCache = createCache({ key: "chakra", prepend: true });
 
