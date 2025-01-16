@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { List, Flex, Text } from "@chakra-ui/react";
 import Link from "next/link";
@@ -25,8 +25,16 @@ export default function footerList({
   hasIcons = false,
 }: FooterListProps) {
   return (
-    <List.Root display="flex" flexDirection="column" gap="8px">
-      <Text color="secondary" fontFamily="RemoraSansBold" fontSize="20px">
+    <List.Root
+      display="flex"
+      flexDirection="column"
+      gap={{ base: "10px", lg: "20px" }}
+    >
+      <Text
+        color="secondary"
+        fontFamily="RemoraSansBold"
+        fontSize={{ base: "1rem", md: "1.6rem", lg: "1.8rem" }}
+      >
         {title}
       </Text>
       {dataList.map((link, index) => (
@@ -34,10 +42,9 @@ export default function footerList({
           display="flex"
           w="100%"
           key={index}
-          h="1.4rem"
-          fontSize="14px"
+          fontSize={{ base: "0.9rem", md: "1.2rem", lg: "1.3rem", xl:"1.2rem" }}
           color="secondary"
-          fontFamily="RemoraSansDemi"
+          fontFamily="RemoraSansMedium"
           _hover={{ textDecoration: "underline" }}
           transition="all 0.3s ease-in-out"
         >
@@ -45,7 +52,7 @@ export default function footerList({
             <Flex
               w="100%"
               align="center"
-              gap="10px"
+              gap="5px"
               onClick={() => {
                 if (link.link === "/") {
                   handleClick(link.description);
@@ -53,7 +60,7 @@ export default function footerList({
               }}
             >
               {hasIcons && link.icon && (
-                <CustomIcon icon={link.icon} color="#CB3438" />
+                <CustomIcon icon={link.icon} color="#FFFF" />
               )}
               <Text>{link.description}</Text>
             </Flex>
