@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'RemoraSansBlack';
+    src: url('/fonts/RemoraSans-W5Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'RemoraSansBlackItalic';
+    src: url('/fonts/RemoraSans-W5BlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'RemoraSansUltraItalic';
+    src: url('/fonts/RemoraSans-W5Ultra.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'RemoraSansUltraItalic';
+    src: url('/fonts/RemoraSans-W5UltraItalic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'RemoraSansBold';
+    src: url('/fonts/RemoraSans-W5Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'RemoraSansBoldItalic';
+    src: url('/fonts/RemoraSans-W5BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'RemoraSansDemi';
+    src: url('/fonts/RemoraSans-W5Demi.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'RemoraSansDemiItalic';
+    src: url('/fonts/RemoraSans-W5DemiItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'RemoraSansMedium';
+    src: url('/fonts/RemoraSans-W5Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'RemoraSansMediumItalic';
+    src: url('/fonts/RemoraSans-W5MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'RemoraSans';
+    src: url('/fonts/RemoraSans-W5Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'RemoraSansItalic';
+    src: url('/fonts/RemoraSans-W5LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'RemoraSansThin';
+    src: url('/fonts/RemoraSans-W5Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'RemoraSansThinItalic';
+    src: url('/fonts/RemoraSans-W5ThinItalic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  body {
+    font-family: 'RemoraSans', sans-serif;
+  }
+  
