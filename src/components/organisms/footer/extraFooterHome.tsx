@@ -1,7 +1,9 @@
+"use client"
+
 import { Flex } from "@chakra-ui/react";
 import React from "react";
-import ImageContainer from "../atoms/images/imageContainer";
-import HomeForms from "../atoms/forms/homeForms";
+import ImageContainer from "../../atoms/images/imageContainer";
+import HomeForms from "../../molecules/forms/homeForms";
 
 export default function ExtraFooterHome() {
   return (

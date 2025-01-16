@@ -2,7 +2,7 @@
 
 import { Button, Flex, Field, Input, Box, defineStyle } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
-import { Field as FieldUI } from "./field";
+import { Field as FieldUI } from "../../atoms/forms/field";
 
 interface FormValues {
   name: string;

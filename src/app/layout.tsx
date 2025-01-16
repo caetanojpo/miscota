@@ -1,5 +1,5 @@
 import Providers from "./providers";
-import Footer from "@/components/organisms/footer";
+import Footer from "@/components/organisms/footer/footer";
 import "@/styles/globals.css";
 
 export default function RootLayout({

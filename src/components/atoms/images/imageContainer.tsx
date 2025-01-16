@@ -1,3 +1,5 @@
+"use client"
+
 import { Box, BoxProps } from "@chakra-ui/react";
 import NextImage from "next/image";
 import React from "react";

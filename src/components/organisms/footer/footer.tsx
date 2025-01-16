@@ -3,9 +3,9 @@
 import { Flex } from "@chakra-ui/react";
 import { Toaster, toaster } from "@/components/atoms/toaster/toaster";
 import React from "react";
-import FooterList, { FooterListItems } from "../atoms/footer/footerList";
+import FooterList, { FooterListItems } from "../../atoms/lists/footerList";
 import { usePathname } from "next/navigation";
-import ImageContainer from "../atoms/images/imageContainer";
+import ImageContainer from "../../atoms/images/imageContainer";
 import ExtraFooterHome from "./extraFooterHome";
 
 const copyEmail = (description: string) => {
