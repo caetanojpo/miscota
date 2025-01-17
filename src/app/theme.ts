@@ -17,6 +17,19 @@ const config = defineConfig({
         yellow: { value: "#FFC107" },
         green: { value: "#198754" },
       },
+      fonts: {
+        body: { value: "RemoraSans, Arial, sans-serif" },
+        heading: { value: "RemoraSans, Arial, sans-serif" },
+        mono: { value: "Courier New, monospace" },
+      },
+      fontWeights: {
+        thin: { value: "100" },
+        light: { value: "300" },
+        normal: { value: "400" },
+        medium: { value: "500" },
+        bold: { value: "700" },
+        black: { value: "900" },
+      },
     },
     semanticTokens: {
       colors: {
@@ -34,4 +47,4 @@ const config = defineConfig({
   },
 });
 
- export default createSystem(defaultConfig, config);
+export const system = createSystem(defaultConfig, config);
