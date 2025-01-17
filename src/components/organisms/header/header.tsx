@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 import React from "react";
 
 const navLinks: MiscotaListItems[] = [
+  { description: "Home", link: "/" },
   { description: "Produtos", link: "/produtos", hasRightBorder: true },
   { description: "Balança pet", link: "/balanca", hasRightBorder: true },
   { description: "Confeitaria", link: "/confeitaria", hasRightBorder: true },
@@ -73,7 +74,7 @@ export default function Header() {
             justify={{ base: "center", xl: "start" }}
             display={{ base: "flex", xl: "none" }}
           >
-            <HeaderMobile />
+            <HeaderMobile dataList={navLinks}/>
           </Flex>
         </Flex>
       </Flex>
