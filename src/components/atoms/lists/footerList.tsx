@@ -4,16 +4,11 @@ import { List, Flex, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import CustomIcon from "../icons/customIcon";
-
-export interface FooterListItems {
-  description: string;
-  link: string;
-  icon?: string;
-}
+import { MiscotaListItems } from "@/utils/interfaces/listProps";
 
 interface FooterListProps {
   title: string;
-  dataList: FooterListItems[];
+  dataList: MiscotaListItems[];
   handleClick: (description: string) => void;
   hasIcons: boolean;
 }
@@ -42,7 +37,12 @@ export default function footerList({
           display="flex"
           w="100%"
           key={index}
-          fontSize={{ base: "0.9rem", md: "1.2rem", lg: "1.3rem", xl:"1.2rem" }}
+          fontSize={{
+            base: "0.9rem",
+            md: "1.2rem",
+            lg: "1.3rem",
+            xl: "1.2rem",
+          }}
           color="secondary"
           fontFamily="RemoraSansMedium"
           _hover={{ textDecoration: "underline" }}
