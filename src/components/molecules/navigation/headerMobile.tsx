@@ -9,11 +9,14 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import React from "react";
+import HeaderList, {
+  HeaderListProps,
+} from "@/components/atoms/lists/headerList";
 
-export default function HeaderMobile() {
+export default function HeaderMobile({ dataList }: HeaderListProps) {
   return (
     <>
-      <DrawerRoot size={{base:'xs', md:"sm", lg: "lg"}}>
+      <DrawerRoot size={{ base: "xs", md: "sm", lg: "lg" }}>
         <DrawerBackdrop />
         <DrawerTrigger asChild>
           <Flex
@@ -40,7 +43,11 @@ export default function HeaderMobile() {
           </Flex>
         </DrawerTrigger>
         <DrawerContent bg="secondary">
-          <DrawerBody></DrawerBody>
+          <DrawerBody>
+            <Flex h="100%">
+              <HeaderList dataList={dataList} />
+            </Flex>
+          </DrawerBody>
           <DrawerCloseTrigger />
         </DrawerContent>
       </DrawerRoot>
