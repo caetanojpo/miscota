@@ -3,10 +3,11 @@
 import { Flex } from "@chakra-ui/react";
 import { Toaster, toaster } from "@/components/atoms/toaster/toaster";
 import React from "react";
-import FooterList, { FooterListItems } from "../../atoms/lists/footerList";
+import FooterList from "../../atoms/lists/footerList";
 import { usePathname } from "next/navigation";
 import ImageContainer from "../../atoms/images/imageContainer";
 import ExtraFooterHome from "./extraFooterHome";
+import { MiscotaListItems } from "@/utils/interfaces/listProps";
 
 const copyEmail = (description: string) => {
   navigator.clipboard.writeText(description);
@@ -18,13 +19,13 @@ const copyEmail = (description: string) => {
   });
 };
 
-const navLinks: FooterListItems[] = [
-  { description: "Sobre a miscota", link: "sobre" },
-  { description: "Onde comprar", link: "comprar" },
-  { description: "Perguntas frequentes", link: "perguntas" },
+const navLinks: MiscotaListItems[] = [
+  { description: "Sobre a miscota", link: "/contato" },
+  { description: "Onde comprar", link: "/produtos" },
+  { description: "Perguntas frequentes", link: "/contato" },
 ];
 
-const contactLinks: FooterListItems[] = [
+const contactLinks: MiscotaListItems[] = [
   {
     description: "@miscotabr",
     icon: "mdi:instagram",
@@ -54,7 +55,6 @@ export default function Footer() {
     <>
       {pathname === "/" ? <ExtraFooterHome /> : ""}
       <Flex
-
         h={{ base: "70dvh", lg: "60dvh", xl: "50dvh" }}
         bg="light"
         align="flex-end"

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Box, BoxProps } from "@chakra-ui/react";
 import NextImage from "next/image";
@@ -17,6 +17,7 @@ export interface ImageContainerProps {
   bottom?: string;
   transform?: string;
   display?: BoxProps["display"];
+  zIndex?: number;
 }
 
 export default function ImageContainer({
@@ -32,6 +33,7 @@ export default function ImageContainer({
   bottom = "",
   transform = "",
   display = "block",
+  zIndex = 0,
 }: ImageContainerProps) {
   return (
     <Box
@@ -42,6 +44,7 @@ export default function ImageContainer({
       bottom={bottom}
       transform={transform}
       display={display}
+      zIndex={zIndex}
     >
       <NextImage
         alt={alt}
