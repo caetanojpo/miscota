@@ -1,3 +1,5 @@
+"use client"
+
 import ImageContainer from "@/components/atoms/images/imageContainer";
 import { Flex, Text } from "@chakra-ui/react";
 import React from "react";

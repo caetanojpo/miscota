@@ -1,3 +1,5 @@
+"use client"
+
 import PageIntroduction from "@/components/molecules/section/pageIntroduction";
 import { Box, Flex } from "@chakra-ui/react";
 import React from "react";

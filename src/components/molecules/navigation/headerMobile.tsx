@@ -1,3 +1,5 @@
+"use client"
+
 import CustomIcon from "@/components/atoms/icons/customIcon";
 import { Flex } from "@chakra-ui/react";
 import {
