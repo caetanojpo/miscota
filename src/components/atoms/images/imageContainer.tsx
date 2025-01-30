@@ -1,30 +1,54 @@
 "use client";
 
 import { Box, BoxProps } from "@chakra-ui/react";
-import NextImage from "next/image";
+import NextImage, { ImageProps as NextImageProps } from "next/image";
 import React from "react";
 
-export interface ImageContainerProps {
+interface BaseImageContainerProps {
   alt: string;
   src: string;
-  width: number;
-  height: number;
-  position?: string;
-  sizes?: string;
-  top?: string;
-  left?: string;
-  right?: string;
-  bottom?: string;
-  transform?: string;
+  position?: BoxProps["position"];
+  top?: BoxProps["top"];
+  left?: BoxProps["left"];
+  right?: BoxProps["right"];
+  bottom?: BoxProps["bottom"];
+  transform?: BoxProps["transform"];
   display?: BoxProps["display"];
-  zIndex?: number;
+  zIndex?: BoxProps["zIndex"];
+  sizes?: NextImageProps["sizes"];
+  objectFit?: React.CSSProperties["objectFit"];
+  boxMinWidth?: BoxProps["minWidth"];
+  boxMinHeight?: BoxProps["minHeight"];
 }
+
+interface WithBoxDimensions extends BaseImageContainerProps {
+  boxWidth: BoxProps["width"];
+  boxHeight: BoxProps["height"];
+  width?: never;
+  height?: never;
+  layout?: never;
+}
+
+interface WithImageDimensions extends BaseImageContainerProps {
+  width: NextImageProps["width"];
+  height: NextImageProps["height"];
+  boxWidth?: never;
+  boxHeight?: never;
+  layout?: NextImageProps["layout"];
+}
+
+type ImageContainerProps = WithBoxDimensions | WithImageDimensions;
 
 export default function ImageContainer({
   alt,
   src,
+  boxWidth,
+  boxHeight,
+  boxMinWidth,
+  boxMinHeight,
   width,
   height,
+  layout,
   position = "absolute",
   sizes = "",
   top = "",
@@ -34,6 +58,7 @@ export default function ImageContainer({
   transform = "",
   display = "block",
   zIndex = 0,
+  objectFit = "cover",
 }: ImageContainerProps) {
   return (
     <Box
@@ -45,16 +70,25 @@ export default function ImageContainer({
       transform={transform}
       display={display}
       zIndex={zIndex}
+      width={boxWidth}
+      height={boxHeight}
+      minWidth={boxMinWidth}
+      minHeight={boxMinHeight}
     >
       <NextImage
         alt={alt}
         src={src}
+        width={width}
+        height={height}
+        layout={layout}
+        fill={!!boxWidth && !!boxHeight}
         sizes={sizes}
         style={{
           width: "100%",
+          height: "100%",
+          objectFit: objectFit,
         }}
-        width={width}
-        height={height}
+        quality={100}
       />
     </Box>
   );
