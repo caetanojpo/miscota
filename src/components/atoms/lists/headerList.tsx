@@ -47,7 +47,7 @@ export default function HeaderList({ dataList }: HeaderListProps) {
           _hover={{ color: "light" }}
           transition="all 0.3s ease-in-out"
         >
-          <Link href={link.link} target="self">
+          <Link href={link.link} target="_self">
             <Flex w="100%" align="center">
               <Text
                 borderBottom={
