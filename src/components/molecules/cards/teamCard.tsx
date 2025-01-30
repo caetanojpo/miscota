@@ -65,6 +65,7 @@ export default function TeamCard({
             base: "center",
             xl: flexOrder == "2" ? "left" : "right",
           }}
+          fontSize={{ md: "1.2rem", lg: "1.4rem" }}
         >
           <Text>{principalText}</Text>
           <Text>{complementText}</Text>

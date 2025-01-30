@@ -19,6 +19,8 @@ interface BaseImageContainerProps {
   objectFit?: React.CSSProperties["objectFit"];
   boxMinWidth?: BoxProps["minWidth"];
   boxMinHeight?: BoxProps["minHeight"];
+  boxMaxWidth?: BoxProps["maxWidth"];
+  boxMaxHeight?: BoxProps["maxHeight"];
 }
 
 interface WithBoxDimensions extends BaseImageContainerProps {
@@ -46,6 +48,8 @@ export default function ImageContainer({
   boxHeight,
   boxMinWidth,
   boxMinHeight,
+  boxMaxWidth,
+  boxMaxHeight,
   width,
   height,
   layout,
@@ -74,6 +78,8 @@ export default function ImageContainer({
       height={boxHeight}
       minWidth={boxMinWidth}
       minHeight={boxMinHeight}
+      maxHeight={boxMaxHeight}
+      maxWidth={boxMaxWidth}
     >
       <NextImage
         alt={alt}

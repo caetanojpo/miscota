@@ -14,7 +14,7 @@ export default function Contact() {
       w="100%"
       position="relative"
       direction="column"
-      gap={{ xl: "20" }}
+      gap={{ xl: "10" }}
     >
       <ContactIntroduction />
       <Flex

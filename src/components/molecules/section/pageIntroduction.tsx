@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import ImageContainer from "@/components/atoms/images/imageContainer";
 import { Flex, Text } from "@chakra-ui/react";
@@ -6,15 +6,22 @@ import React from "react";
 
 export default function PageIntroduction() {
   return (
-    <Flex h={{ base: "100%", xl: "100%" }} mb={{xl:'20'}}>
+    <Flex
+      h={{ base: "100%", xl: "100%" }}
+      mb={{ xl: "20" }}
+      position={"relative"}
+    >
       <ImageContainer
         alt="Confeitaria PET"
         src="/page-intro-confectionery.png"
-        width={500}
-        height={500}
-        top="-3%"
+        boxWidth={"80%"}
+        boxHeight={"80%"}
+        boxMaxWidth={500}
+        top="0"
         left="50%"
-        transform="translate(-50%, 0%)"
+        transform="translate(-50%, -50%)"
+        zIndex={10}
+        objectFit="contain"
       />
 
       <Flex
@@ -22,14 +29,14 @@ export default function PageIntroduction() {
         w="100%"
         direction="column"
         alignItems="center"
-        mt={{base:'12', md:'24', xl:"36"}}
-        pb={{base:'12', xl:'0'}}
+        mt={{ base: "20", md: "32", xl: "36" }}
+        pb={{ base: "12", xl: "0" }}
         px={{ base: "10", xl: "40" }}
         textAlign="center"
         color="secondary"
         fontFamily="RemoraSansMedium"
-        gap={{base:"6", xl:'8'}}
-        fontSize={{base:'1rem', xl:'1.2rem'}}
+        gap={{ base: "6", xl: "8" }}
+        fontSize={{ md: "1.2rem", lg: "1.4rem" }}
       >
         <Text>
           Nosso time possuí uma cozinha incrível e confeiteiros de mão cheia

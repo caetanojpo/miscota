@@ -34,7 +34,7 @@ export default function ContactIntroduction() {
         color="secondary"
         fontFamily="RemoraSansMedium"
         gap={{ base: "6", xl: "8" }}
-        fontSize={{ base: "1rem", xl: "1.2rem" }}
+        fontSize={{ md: "1.2rem", lg: "1.4rem" }}
         position="relative"
       >
         <ImageContainer
