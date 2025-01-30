@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
 import ImageContainer from "@/components/atoms/images/imageContainer";
-import { Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 
 export default function ContactIntroduction() {
@@ -78,7 +78,7 @@ export default function ContactIntroduction() {
           src="/diagonal-ball.png"
           width={60}
           height={60}
-          bottom="-15%"
+          bottom="10"
           left="20%"
           display={{ base: "none", xl: "initial" }}
         />
@@ -87,9 +87,16 @@ export default function ContactIntroduction() {
           src="/diagonal-bone.png"
           width={70}
           height={70}
-          bottom="-15%"
+          bottom="10"
           right="20%"
           display={{ base: "none", xl: "initial" }}
+        />
+        <Box
+          style={{
+            width: "100%",
+            border: "2px solid #DDDD",
+          }}
+          marginTop={{ base: "10px", md: "100px" }}
         />
       </Flex>
     </Flex>
