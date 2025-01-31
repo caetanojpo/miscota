@@ -141,7 +141,7 @@ export default function Confectionery() {
           marginY={{ base: "10", xl: "14" }}
           px={{ base: "10", xl: "0" }}
         >
-          <Link href="" target={"_blank"}>
+          <Link href="https://api.whatsapp.com/send?phone=5514997955048" target={"_blank"}>
             <NextImage
               alt={"alt"}
               src={"/party.png"}
