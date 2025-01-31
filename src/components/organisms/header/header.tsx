@@ -57,7 +57,7 @@ export default function Header() {
         >
           <Link
             href={"/"}
-            target="self"
+            target="_self"
             style={{ width: "100%", height: "100%" }}
           />
         </Flex>
