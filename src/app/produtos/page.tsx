@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+// import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export default function Products() {
   return (
@@ -16,12 +16,12 @@ export default function Products() {
       }}
     >
       <h3 style={{ fontSize: "40px", fontWeight: "bold" }}>Oiii Linda</h3>
-      <DotLottieReact
+      {/* <DotLottieReact
         src="https://lottie.host/eba9dee1-6388-4357-8331-ccc1b4e2808e/m81D9Rx0tR.lottie"
         loop
         autoplay
         style={{ width: "300px", height: "300px" }}
-      />
+      /> */}
     </div>
   );
 }
