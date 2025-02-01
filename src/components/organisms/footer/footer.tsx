@@ -53,7 +53,7 @@ export default function Footer() {
 
   return (
     <>
-      {pathname === "/" ? <ExtraFooterHome /> : ""}
+      {/* {pathname === "/" ? <ExtraFooterHome /> : ""} */}
       <Flex
         h={{ base: "70dvh", lg: "60dvh", xl: "50dvh" }}
         bg="light"
