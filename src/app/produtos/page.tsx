@@ -15,7 +15,7 @@ export default function Products() {
         justifyContent: "center",
       }}
     >
-      <h3 style={{ fontSize: "40px", fontWeight: "bold" }}>Oiii Linda</h3>
+      {/* <h3 style={{ fontSize: "40px", fontWeight: "bold" }}>Oiii Linda</h3> */}
       {/* <DotLottieReact
         src="https://lottie.host/eba9dee1-6388-4357-8331-ccc1b4e2808e/m81D9Rx0tR.lottie"
         loop
