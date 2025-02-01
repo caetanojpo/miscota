@@ -1,6 +1,7 @@
 import { TextDecoration } from "@/components/atoms/textDecoration";
 import { Avaliation } from "@/components/organisms/avaliation";
 import Carousel from "@/components/organisms/carousel";
+import { ContainerBenefits } from "@/components/organisms/containerBenefits";
 import { Flex, Image, Text } from "@chakra-ui/react";
 export default function Home() {
   return (
@@ -98,7 +99,7 @@ export default function Home() {
         </Flex>
       </Flex>
       <Flex mt="70px">
-        <Carousel />
+        <Carousel typeSlide={1} />
       </Flex>
       <Flex
         flexDir="column"
@@ -142,8 +143,247 @@ export default function Home() {
           <Image alt="" src="/image-card-two.png" />
         </Flex>
       </Flex>
-
-      <Avaliation />
+      <Flex
+        pt="50px"
+        pb="20px"
+        mt="70px"
+        borderTop="5px solid #f7c657"
+        borderBottom="5px solid #f7c657"
+        position="relative"
+      >
+        <Avaliation />
+      </Flex>
+      <Flex mt="70px" mb="100px">
+        <Carousel typeSlide={2} />
+      </Flex>
+      <ContainerBenefits />
+      <Flex mt="50px" px="90px" align="flex-end">
+        <Flex position="relative">
+          <Flex>
+            <TextDecoration
+              text="Alimentação balanceada"
+              transform="rotate(-5deg)"
+              position="absolute"
+              maxW="700px"
+              top="200px"
+              textAlign="center"
+              textStrokeColor2="#f5f2e9"
+              fontSize="45px"
+            />
+            <TextDecoration
+              text="+"
+              position="absolute"
+              transform="rotate(-5deg)"
+              maxW="600px"
+              top="276px"
+              left="-260px"
+              textAlign="center"
+              textStrokeColor2="#f5f2e9"
+              textStrokeColor1="#f7c657"
+              fontSize="45px"
+            />
+            <TextDecoration
+              text="Qualidade de vida"
+              transform="rotate(-5deg)"
+              position="absolute"
+              maxW="600px"
+              top="250px"
+              textAlign="center"
+              textStrokeColor2="#f5f2e9"
+              fontSize="45px"
+            />
+            <TextDecoration
+              text="+"
+              position="absolute"
+              transform="rotate(-5deg)"
+              maxW="700px"
+              top="317px"
+              left="-190px"
+              textAlign="center"
+              textStrokeColor2="#f5f2e9"
+              textStrokeColor1="#f7c657"
+              fontSize="45px"
+            />
+            <TextDecoration
+              text="Longevidade"
+              transform="rotate(-5deg)"
+              position="absolute"
+              maxW="500px"
+              top="300px"
+              textAlign="center"
+              textStrokeColor2="#f5f2e9"
+              fontSize="45px"
+            />
+            <Image alt="" src="/image-food.png" w="800px" />
+          </Flex>
+        </Flex>
+        <Flex position="relative" flexDir="column">
+          <TextDecoration
+            text="Alimentação natural"
+            transform="rotate(-3deg)"
+            position="absolute"
+            maxW="300px"
+            top="-100px"
+            left="18px"
+            textAlign="center"
+            textStrokeColor2="#f7c657"
+            fontSize="32px"
+          />
+          <Flex
+            position="absolute"
+            fontSize="20px"
+            top="450px"
+            left="140px"
+            flexDir="column"
+          >
+            <Text color="#893733" fontWeight="bold" minW="300px">
+              Alimentação natural
+            </Text>
+            <Text color="#f7c657" fontWeight="bold" minW="300px" ml="112px">
+              Franguinho
+            </Text>
+          </Flex>
+          <Text
+            position="absolute"
+            top="510px"
+            left="170px"
+            color="white"
+            fontWeight="bold"
+          >
+            R$
+          </Text>
+          <Text
+            position="absolute"
+            top="510px"
+            left="200px"
+            color="#893733"
+            fontWeight="bold"
+          >
+            25,00
+          </Text>
+          <Text
+            position="absolute"
+            top="530px"
+            left="170px"
+            color="white"
+            fontWeight="bold"
+          >
+            500g
+          </Text>
+          <Text
+            position="absolute"
+            top="510px"
+            left="270px"
+            color="white"
+            fontWeight="bold"
+          >
+            R$
+          </Text>
+          <Text
+            position="absolute"
+            top="510px"
+            left="300px"
+            color="#893733"
+            fontWeight="bold"
+          >
+            50,00
+          </Text>
+          <Text
+            position="absolute"
+            top="530px"
+            left="270px"
+            color="white"
+            fontWeight="bold"
+          >
+            500g
+          </Text>
+          <Image alt="" src="/image-container-one.png" h="600px" ml="60px" />
+        </Flex>
+        <Flex position="relative" flexDir="column">
+          <TextDecoration
+            text="Biscoitos"
+            transform="rotate(4deg)"
+            position="absolute"
+            maxW="300px"
+            top="-70px"
+            left="18px"
+            textAlign="center"
+            textStrokeColor2="#f7c657"
+            fontSize="32px"
+          />
+          <Flex
+            position="absolute"
+            fontSize="20px"
+            top="75px"
+            left="80px"
+            flexDir="column"
+          >
+            <Text color="#893733" fontWeight="bold" minW="300px">
+              Mix de biscoitinhos
+            </Text>
+            <Text color="#f7c657" fontWeight="bold" minW="300px">
+              Calm dog
+            </Text>
+          </Flex>
+          <Text
+            position="absolute"
+            top="140px"
+            left="80px"
+            color="white"
+            fontWeight="bold"
+          >
+            R$
+          </Text>
+          <Text
+            position="absolute"
+            top="140px"
+            left="108px"
+            color="#893733"
+            fontWeight="bold"
+          >
+            25,00
+          </Text>
+          <Text
+            position="absolute"
+            top="160px"
+            left="80px"
+            color="white"
+            fontWeight="bold"
+          >
+            100g
+          </Text>
+          <Image alt="" src="/container-image-two.png" h="600px" ml="60px" />
+        </Flex>
+      </Flex>
+      <Flex mt="70px">
+        <Carousel typeSlide={3} />
+      </Flex>
+      <Flex
+        mt="200px"
+        position="relative"
+        w="100%"
+        align="center"
+        justify="center"
+      >
+        <Image
+          alt=""
+          src="/here-icon.png"
+          width="50px"
+          top="-40px"
+          position="absolute"
+          left="57%"
+        />
+        <TextDecoration
+          text="Saiba onde encontrar"
+          position="absolute"
+          top="-25px"
+          left="420px"
+          textAlign="center"
+          textStrokeColor2="white"
+          fontSize="32px"
+        />
+        <Image alt="" src="/find-what.png" w="70%" />
+      </Flex>
     </Flex>
   );
 }
