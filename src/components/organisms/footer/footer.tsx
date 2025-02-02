@@ -4,9 +4,9 @@ import { Flex } from "@chakra-ui/react";
 import { Toaster, toaster } from "@/components/atoms/toaster/toaster";
 import React from "react";
 import FooterList from "../../atoms/lists/footerList";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import ImageContainer from "../../atoms/images/imageContainer";
-import ExtraFooterHome from "./extraFooterHome";
+// import ExtraFooterHome from "./extraFooterHome";
 import { MiscotaListItems } from "@/utils/interfaces/listProps";
 
 const copyEmail = (description: string) => {
@@ -49,7 +49,7 @@ const contactLinks: MiscotaListItems[] = [
 ];
 
 export default function Footer() {
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
   return (
     <>
