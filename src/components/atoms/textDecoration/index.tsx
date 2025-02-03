@@ -41,13 +41,13 @@ export const TextDecoration: React.FC<TextDecorationProps> = ({
     >
       <Text
         color="#893733"
-        fontWeight="bold"
         fontSize={fontSize}
         letterSpacing="3px"
         zIndex={9999}
         WebkitTextStroke={`3px ${textStrokeColor1}`}
         lineHeight={lineHeight}
         maxW={maxW}
+        fontFamily={"RemoraSansBold"}
       >
         {text}
       </Text>
@@ -55,12 +55,12 @@ export const TextDecoration: React.FC<TextDecorationProps> = ({
         transform="translate(0%, -100%)"
         color="#893733"
         letterSpacing="3px"
-        fontWeight="bold"
         fontSize={fontSize}
         WebkitTextStroke={`15px ${textStrokeColor2}`}
         textShadow="0px 0px 16px black;"
         lineHeight={lineHeight}
         maxW={maxW}
+        fontFamily={"RemoraSansBold"}
       >
         {text}
       </Text>

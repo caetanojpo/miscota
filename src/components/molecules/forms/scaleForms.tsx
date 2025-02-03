@@ -70,7 +70,7 @@ const ScaleForms = () => {
           gap={{ base: "30px", xl: "40px" }}
           mt={{ base: "20px", xl: "0px" }}
           align="center"
-          px={{ base: 4, md: 20, lg:28, xl: 0 }}
+          px={{ base: 4, md: 20, lg: 28, xl: 0 }}
         >
           <Flex
             gap={{ base: "8", xl: "8" }}
@@ -89,16 +89,18 @@ const ScaleForms = () => {
                 <Input
                   border="4px solid"
                   borderColor="primary"
+                  color={"secondary"}
                   borderRadius="50px"
                   className="peer"
                   type="number"
                   step="any"
                   textAlign="center"
-                  fontSize={{base:'1.2rem', md:'1.4rem', xl:'1.2rem'}}
+                  fontSize={{ base: "1.2rem", md: "1.4rem", xl: "1.2rem" }}
                   p={5}
                   placeholder="0.0 (anos/meses)"
                   {...register("age", {
-                    required: "A idade do animal é necessária: 1.2 = 1 ano e 2 meses",
+                    required:
+                      "A idade do animal é necessária: 1.2 = 1 ano e 2 meses",
                   })}
                 />
                 <ImageContainer
@@ -121,17 +123,19 @@ const ScaleForms = () => {
                 justifyContent="center"
               >
                 <Input
+                  color={"secondary"}
                   border="4px solid"
                   borderColor="primary"
                   type="number"
                   step="any"
-                  fontSize={{base:'1.2rem', md:'1.4rem', xl:'1.2rem'}}
+                  fontSize={{ base: "1.2rem", md: "1.4rem", xl: "1.2rem" }}
                   borderRadius="50px"
                   textAlign="center"
                   className="peer"
                   placeholder="0.0 (quilos/gramas)"
                   {...register("weight", {
-                    required: "O peso do animal é necessário: 1.2 = 1 kg e 200 gramas",
+                    required:
+                      "O peso do animal é necessário: 1.2 = 1 kg e 200 gramas",
                   })}
                   p={5}
                 />
@@ -193,12 +197,12 @@ const ScaleForms = () => {
         />
         <Flex w="full" h="full" justify="center" align="center">
           <Text
-            color="secondary"
+            color={"secondary"}
             fontFamily="RemoraSansBold"
-            fontSize={{base:'1.2rem', md:'1.8rem', xl: "4rem" }}
+            fontSize={{ base: "1.2rem", md: "1.8rem", xl: "4rem" }}
             zIndex={20}
           >
-            {result} {/* Step 4: Display the dynamic result */}
+            {result}
           </Text>
         </Flex>
       </Flex>

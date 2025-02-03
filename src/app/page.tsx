@@ -15,7 +15,7 @@ export default function Home() {
       flexDir="column"
       overflow="hidden"
       pt={isMobile ? "60px" : ""}
-      mb="32"
+      pb="32"
     >
       {!isMobile && (
         <Flex
@@ -92,9 +92,9 @@ export default function Home() {
             transform={isMobile ? "rotate(10deg)" : "rotate(-6deg)"}
             text="Alimentação Natural"
             position="absolute"
-            maxW="400px"
+            maxW="450px"
             textAlign="center"
-            left={isMobile ? "60px" : "30px"}
+            left={isMobile ? "60px" : "60px"}
             top={isMobile ? "-15px" : "-50px"}
             lineHeight="1"
             textStrokeColor2="#f7c657"
@@ -239,11 +239,11 @@ export default function Home() {
                 text="Alimentação balanceada"
                 transform="rotate(-5deg)"
                 position="absolute"
-                maxW="700px"
+                maxW="750px"
                 top="200px"
                 textAlign="center"
                 textStrokeColor2="#f5f2e9"
-                fontSize="45px"
+                fontSize="38px"
               />
               <TextDecoration
                 text="+"
@@ -255,7 +255,7 @@ export default function Home() {
                 textAlign="center"
                 textStrokeColor2="#f5f2e9"
                 textStrokeColor1="#f7c657"
-                fontSize="45px"
+                fontSize="38px"
               />
               <TextDecoration
                 text="Qualidade de vida"
@@ -265,7 +265,7 @@ export default function Home() {
                 top="250px"
                 textAlign="center"
                 textStrokeColor2="#f5f2e9"
-                fontSize="45px"
+                fontSize="38px"
               />
               <TextDecoration
                 text="+"
@@ -277,7 +277,7 @@ export default function Home() {
                 textAlign="center"
                 textStrokeColor2="#f5f2e9"
                 textStrokeColor1="#f7c657"
-                fontSize="45px"
+                fontSize="38px"
               />
               <TextDecoration
                 text="Longevidade"
@@ -287,7 +287,7 @@ export default function Home() {
                 top="300px"
                 textAlign="center"
                 textStrokeColor2="#f5f2e9"
-                fontSize="45px"
+                fontSize="38px"
               />
               <Image alt="" src="/image-food.png" w="800px" />
             </Flex>
