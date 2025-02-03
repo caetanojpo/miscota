@@ -27,7 +27,7 @@ export default function Products() {
         <TextDecoration
           text="Nossos"
           position="absolute"
-          maxW="350px"
+          maxW="380px"
           top={isMobile ? "0px" : "-100px"}
           left={isMobile ? "" : "-500px"}
           textAlign="center"
