@@ -19,7 +19,7 @@ export default function Products() {
           transform={
             isMobile
               ? "translate(100px, 90px) rotate(-15deg)"
-              : "translate(200px, 20px) rotate(-15deg)"
+              : "translate(180px, 20px) rotate(-15deg)"
           }
           height={isMobile ? "38.5px" : "77px"}
           zIndex={999}
