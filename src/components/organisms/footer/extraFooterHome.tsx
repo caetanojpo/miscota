@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Flex } from "@chakra-ui/react";
 import React from "react";
@@ -8,16 +8,15 @@ import HomeForms from "../../molecules/forms/homeForms";
 export default function ExtraFooterHome() {
   return (
     <Flex
-
-    h={{ base: "75vh", xl: "50vh" }}
-    bg="light"
-    position="relative"
-    align="center"
-    justify="center"
-    gap={{ base: "40px", xl: "100px" }}
-    padding={{ base: "40px", xl: "0px" }}
+      h={{ base: "75vh", xl: "50vh" }}
+      bg="light"
+      position="relative"
+      align="center"
+      justify="center"
+      gap={{ base: "40px", xl: "100px" }}
+      padding={{ base: "40px", xl: "0px" }}
     >
-      <ImageContainer
+      {/* <ImageContainer
         alt="Ganhe 10% off na sua primeira compra"
         src="/promotion.png"
         width={500}
@@ -26,7 +25,7 @@ export default function ExtraFooterHome() {
         left="0"
         transform="translate(20%, 40%)"
         sizes="(max-width: 767px) 70dvw, (max-width: 1023px) 50dvw, (max-width: 1279px) 40dvw, 30dvw"
-      />
+      /> */}
       <Flex height="100%" w={{ base: "100%", xl: "60%" }}>
         <HomeForms />
       </Flex>
