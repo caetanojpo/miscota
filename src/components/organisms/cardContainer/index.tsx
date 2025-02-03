@@ -9,7 +9,11 @@ const Card = () => {
     <div className="body">
       <div
         className="container"
-        style={{ flexDirection: isMobile ? "column" : "row" }}
+        style={{
+          flexDirection: isMobile ? "column" : "row",
+          justifyContent: isMobile ? "center" : "",
+          alignItems: isMobile ? "center" : "",
+        }}
       >
         <div className="card">
           <div

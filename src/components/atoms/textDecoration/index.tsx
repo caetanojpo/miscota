@@ -40,7 +40,7 @@ export const TextDecoration: React.FC<TextDecorationProps> = ({
       position={position}
     >
       <Text
-        color="#893733"
+        color={textStrokeColor1}
         fontSize={fontSize}
         letterSpacing="3px"
         zIndex={9999}
@@ -53,7 +53,7 @@ export const TextDecoration: React.FC<TextDecorationProps> = ({
       </Text>
       <Text
         transform="translate(0%, -100%)"
-        color="#893733"
+        color={textStrokeColor2}
         letterSpacing="3px"
         fontSize={fontSize}
         WebkitTextStroke={`15px ${textStrokeColor2}`}

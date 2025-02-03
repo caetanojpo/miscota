@@ -189,7 +189,17 @@ const Card = () => {
                 flexDirection: "column",
                 padding: "10px",
               }}
-            ></div>
+            >
+              <Flex px="20px">
+                <Text color="#95584a" textAlign="center" fontWeight="bold">
+                  Farinha de arroz, frango, Maracujá, Erva cidreira, Erva doce,
+                  Camomila, Lavanda, Banha suina, ovo, Spirulina azul
+                </Text>
+              </Flex>
+              <Flex w="100%" justifyContent="center" mt="30px">
+                <ButtonPayment />
+              </Flex>
+            </div>
           </div>
         </div>
         <div className="card">
@@ -275,7 +285,17 @@ const Card = () => {
                 flexDirection: "column",
                 padding: "10px",
               }}
-            ></div>
+            >
+              <Flex px="20px">
+                <Text color="#989c38" textAlign="center" fontWeight="bold">
+                  Farinha de arroz, frango, Maracujá, Erva cidreira, Erva doce,
+                  Camomila, Lavanda, Banha suina, ovo, Spirulina azul
+                </Text>
+              </Flex>
+              <Flex w="100%" justifyContent="center" mt="30px">
+                <ButtonPayment />
+              </Flex>
+            </div>
           </div>
         </div>
       </div>

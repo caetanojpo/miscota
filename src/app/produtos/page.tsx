@@ -112,7 +112,7 @@ export default function Products() {
         <TextDecoration
           text="Alimentação"
           position="absolute"
-          maxW="500px"
+          maxW="900px"
           top={isMobile ? "-40px" : "-80px"}
           textAlign="center"
           textStrokeColor1="#893733"
@@ -191,7 +191,7 @@ export default function Products() {
         />
         <Flex
           w="100%"
-          mt={isMobile ? "80px" : ""}
+          mt={isMobile ? "80px" : "50px"}
           flexDir={isMobile ? "column" : "row"}
         >
           <CardContainerCookie />

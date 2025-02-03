@@ -3,7 +3,13 @@ import { Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 export const ContainerBenefits = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   return (
-    <Flex w="100%" justify="center" align="center" position="relative">
+    <Flex
+      w="100%"
+      justify="center"
+      align="center"
+      position="relative"
+      mt={isMobile ? "40px" : ""}
+    >
       <Flex
         borderRadius="20px"
         border="5px solid #f7c757"

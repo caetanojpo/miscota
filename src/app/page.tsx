@@ -459,18 +459,18 @@ export default function Home() {
             alt=""
             src="/here-icon.png"
             width={isMobile ? "30px" : "50px"}
-            top={isMobile ? "-60px" : "-40px"}
+            top={isMobile ? "-65px" : "-45px"}
             position="absolute"
-            left={isMobile ? "50%" : "57%"}
+            left={isMobile ? "50%" : "46%"}
           />
           <TextDecoration
             text="Saiba onde encontrar"
             position="absolute"
-            top={isMobile ? "-20px" : "-25px"}
-            left={isMobile ? "10px" : "420px"}
+            top={isMobile ? "-20px" : "-45px"}
+            left={isMobile ? "10px" : "320px"}
             textAlign="center"
             textStrokeColor2="white"
-            fontSize={isMobile ? "15px" : "32px"}
+            fontSize={isMobile ? "15px" : "46px"}
           />
           <Image alt="" src="/find-what.png" w={isMobile ? "100%" : "70%"} />
         </Link>
