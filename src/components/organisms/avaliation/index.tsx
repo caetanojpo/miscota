@@ -1,8 +1,9 @@
 import { TextDecoration } from "@/components/atoms/textDecoration";
 import { Rating } from "@/components/ui/rating";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 
 export const Avaliation = () => {
+  const isMobile = useBreakpointValue({ base: true, md: false });
   const reviews = [
     {
       name: "Marianne",
@@ -32,6 +33,7 @@ export const Avaliation = () => {
 
   return (
     <Box
+      display="flex"
       border='4px #f7c657" borderBottom="4px #f7c657'
       w="100vw"
       overflow="hidden"
@@ -45,32 +47,20 @@ export const Avaliation = () => {
             gap={1}
             mb={8}
           >
-            <Flex
-              position="absolute"
-              transform="rotate(-6deg)"
-              top="-50px"
-              justify="center"
-            >
+            <Flex position="absolute" top={isMobile ? "5px" : "-10"} justify="center" transform={isMobile ? "" : "rotate(-5deg)"}>
               <TextDecoration
                 text="Avaliações"
                 maxW="500px"
                 textAlign="center"
                 textStrokeColor2="#f7c657"
-                fontSize="55px"
+                fontSize="40px"
               />
-              <Image
-                alt=""
-                src="/star.png"
-                w={55}
-                h={59}
-                mt="20px"
-                ml="10px"
-                transform="rotate(5deg)"
-              />
+              <Image alt="" src="/star.png" w={55} h={59} ml="10px" />
             </Flex>
           </Flex>
 
           <Flex
+            flexDirection={isMobile ? "column" : "row"}
             justify="center"
             gap={16}
             overflowX="auto"

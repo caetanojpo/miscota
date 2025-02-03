@@ -1,21 +1,23 @@
-import { Flex, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 
 export const ContainerBenefits = () => {
+  const isMobile = useBreakpointValue({ base: true, md: false });
   return (
     <Flex w="100%" justify="center" align="center" position="relative">
       <Flex
         borderRadius="20px"
         border="5px solid #f7c757"
-        flexDir="row"
+        flexDir={isMobile ? "column" : "row"}
         w="90%"
         py="40px"
       >
         <Flex
           flexDir="column"
-          w="33%"
+          w={isMobile ? "100%" : "33%"}
+          mt={isMobile ? "40px" : ""}
           justify="center"
           align="center"
-          borderRight="2px solid #d8d2bc"
+          borderRight={isMobile ? "" : "2px solid #d8d2bc"}
         >
           <Image alt="" src="/nose-tongue.png" w="100px" h="100px" />
           <Text
@@ -37,10 +39,11 @@ export const ContainerBenefits = () => {
         </Flex>
         <Flex
           flexDir="column"
-          w="33%"
+          w={isMobile ? "100%" : "33%"}
+          mt={isMobile ? "40px" : ""}
           justify="start"
           align="center"
-          borderRight="2px solid #d8d2bc"
+          borderRight={isMobile ? "" : "2px solid #d8d2bc"}
         >
           <Image alt="" src="/hidratation-icon.png" w="80px" h="110px" />
           <Text
@@ -60,7 +63,13 @@ export const ContainerBenefits = () => {
             Seu pet mais hidratado
           </Text>
         </Flex>
-        <Flex flexDir="column" w="33%" justify="start" align="center">
+        <Flex
+          flexDir="column"
+          w={isMobile ? "100%" : "33%"}
+          justify="start"
+          align="center"
+          mt={isMobile ? "40px" : ""}
+        >
           <Image alt="" src="/carrot-icon.png" w="110px" h="100px" />
           <Text
             fontSize="30px"

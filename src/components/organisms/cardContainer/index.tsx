@@ -1,12 +1,16 @@
-import { Flex, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 import "./style.css";
 import { TextDecoration } from "@/components/atoms/textDecoration";
 import { ButtonPayment } from "@/components/molecules/button";
 
 const Card = () => {
+  const isMobile = useBreakpointValue({ base: true, md: false });
   return (
     <div className="body">
-      <div className="container">
+      <div
+        className="container"
+        style={{ flexDirection: isMobile ? "column" : "row" }}
+      >
         <div className="card">
           <div
             className="face face1"
