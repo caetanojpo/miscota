@@ -4,6 +4,7 @@ import { Avaliation } from "@/components/organisms/avaliation";
 import Carousel from "@/components/organisms/carousel";
 import { ContainerBenefits } from "@/components/organisms/containerBenefits";
 import { Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function Home() {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -14,6 +15,7 @@ export default function Home() {
       flexDir="column"
       overflow="hidden"
       pt={isMobile ? "60px" : ""}
+      mb="32"
     >
       {!isMobile && (
         <Flex
@@ -147,45 +149,66 @@ export default function Home() {
         justifyContent="center"
         alignItems="center"
       >
-        <Flex w={isMobile ? "100%" : "60%"} position="relative">
-          <TextDecoration
-            transform={isMobile ? "rotate(0deg)" : "rotate(-5deg)"}
-            text="Balança Pet"
-            position="absolute"
-            maxW="500px"
-            textAlign="center"
-            left={isMobile ? "-70px" : "-380px"}
-            top={isMobile ? "-30px" : "-40px"}
-            textStrokeColor2="white"
-            fontSize={isMobile ? "28px" : "55px"}
-          />
-          <Image alt="" src="/image-card-one.png" />
-        </Flex>
-
-        <Flex w={isMobile ? "100%" : "60%"} position="relative" mt="100px">
-          <Flex
-            position="absolute"
-            w={isMobile ? "550px" : "650px"}
-            left={isMobile ? "-70px" : "500px"}
-            top={isMobile ? "-30px" : "-40px"}
-          >
+        <Link
+          target="_self"
+          href="/balanca"
+          style={{
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Flex w={isMobile ? "100%" : "60%"} position="relative">
             <TextDecoration
-              text="Confeitaria Pet"
-              maxW="650px"
+              transform={isMobile ? "rotate(0deg)" : "rotate(-5deg)"}
+              text="Balança Pet"
+              position="absolute"
+              maxW="500px"
               textAlign="center"
-              textStrokeColor2="#f5f2e9"
+              left={isMobile ? "-70px" : "-380px"}
+              top={isMobile ? "-30px" : "-40px"}
+              textStrokeColor2="white"
               fontSize={isMobile ? "28px" : "55px"}
             />
-            <Image
-              alt=""
-              src="/paw.png"
-              w="80px"
-              h="70px"
-              ml="30px"
-              transform="rotate(-13deg)"
-            />
+            <Image alt="" src="/image-card-one.png" />
           </Flex>
-          <Image alt="" src="/image-card-two.png" />
+        </Link>
+        <Flex w={isMobile ? "100%" : "60%"} position="relative" mt="100px">
+          <Link
+            target="_self"
+            href="/confeitaria"
+            style={{
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Flex
+              position="absolute"
+              w={isMobile ? "550px" : "650px"}
+              left={isMobile ? "-70px" : "500px"}
+              top={isMobile ? "-30px" : "-40px"}
+            >
+              <TextDecoration
+                text="Confeitaria Pet"
+                maxW="650px"
+                textAlign="center"
+                textStrokeColor2="#f5f2e9"
+                fontSize={isMobile ? "28px" : "55px"}
+              />
+              <Image
+                alt=""
+                src="/paw.png"
+                w="80px"
+                h="70px"
+                ml="30px"
+                transform="rotate(-13deg)"
+              />
+            </Flex>
+            <Image alt="" src="/image-card-two.png" />
+          </Link>
         </Flex>
       </Flex>
       <Flex
@@ -422,24 +445,35 @@ export default function Home() {
         align="center"
         justify="center"
       >
-        <Image
-          alt=""
-          src="/here-icon.png"
-          width={isMobile ? "30px" : "50px"}
-          top={isMobile ? "-60px" : "-40px"}
-          position="absolute"
-          left={isMobile ? "50%" : "57%"}
-        />
-        <TextDecoration
-          text="Saiba onde encontrar"
-          position="absolute"
-          top={isMobile ? "-20px" : "-25px"}
-          left={isMobile ? "10px" : "420px"}
-          textAlign="center"
-          textStrokeColor2="white"
-          fontSize={isMobile ? "15px" : "32px"}
-        />
-        <Image alt="" src="/find-what.png" w={isMobile ? "100%" : "70%"} />
+        <Link
+          target="_self"
+          href="/contato"
+          style={{
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Image
+            alt=""
+            src="/here-icon.png"
+            width={isMobile ? "30px" : "50px"}
+            top={isMobile ? "-60px" : "-40px"}
+            position="absolute"
+            left={isMobile ? "50%" : "57%"}
+          />
+          <TextDecoration
+            text="Saiba onde encontrar"
+            position="absolute"
+            top={isMobile ? "-20px" : "-25px"}
+            left={isMobile ? "10px" : "420px"}
+            textAlign="center"
+            textStrokeColor2="white"
+            fontSize={isMobile ? "15px" : "32px"}
+          />
+          <Image alt="" src="/find-what.png" w={isMobile ? "100%" : "70%"} />
+        </Link>
       </Flex>
     </Flex>
   );

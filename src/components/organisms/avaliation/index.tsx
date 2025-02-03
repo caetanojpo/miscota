@@ -10,24 +10,28 @@ export const Avaliation = () => {
       rating: 5,
       review:
         "Depois que inseri a alimentação natural na vida do meu pet, a disposição e ânimo dele mudou completamente",
+      picture: "/marianne.png",
     },
     {
       name: "Fabricio",
       rating: 5,
       review:
         "Meu cachorro amou! As refeições parecem tão frescas e saudáveis que até eu fiquei com vontade de experimentar. Recomendo demais!",
+      picture: "/fabricio.png",
     },
     {
       name: "Gustavo",
       rating: 5,
       review:
         "Entrega rápida e comida de excelente qualidade. Meu pet é exigente, mas devorou tudo rapidinho!",
+      picture: "/gustavo.png",
     },
     {
       name: "Laila",
       rating: 5,
       review:
         "O cheiro é agradável e meu pet adora. Notei uma melhora na digestão dele também. Comprarei novamente!",
+      picture: "/laila.png",
     },
   ];
 
@@ -47,7 +51,12 @@ export const Avaliation = () => {
             gap={1}
             mb={8}
           >
-            <Flex position="absolute" top={isMobile ? "5px" : "-10"} justify="center" transform={isMobile ? "" : "rotate(-5deg)"}>
+            <Flex
+              position="absolute"
+              top={isMobile ? "5px" : "-10"}
+              justify="center"
+              transform={isMobile ? "" : "rotate(-5deg)"}
+            >
               <TextDecoration
                 text="Avaliações"
                 maxW="500px"
@@ -99,7 +108,9 @@ export const Avaliation = () => {
               >
                 <Flex direction="column" align="center">
                   <Image
-                    src="https://webcrumbs.cloud/placeholder"
+                    src={
+                      review.picture ?? "https://webcrumbs.cloud/placeholder"
+                    }
                     alt={review.name}
                     w="20"
                     h="20"

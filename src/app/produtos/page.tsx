@@ -14,6 +14,7 @@ export default function Products() {
         <Image
           alt=""
           src="/bone.png"
+          display={{ base: "none", xl: "initial" }}
           width={isMobile ? "64.5px" : "129px"}
           transform={
             isMobile
@@ -58,6 +59,7 @@ export default function Products() {
         <Image
           alt=""
           src="/paw.png"
+          display={{ base: "none", xl: "initial" }}
           w={isMobile ? "50px" : "100px"}
           position="absolute"
           left={isMobile ? "80%" : "75%"}
@@ -67,6 +69,7 @@ export default function Products() {
         <Image
           alt=""
           src="/bone.png"
+          display={{ base: "none", xl: "initial" }}
           w={isMobile ? "80px" : "160px"}
           top={isMobile ? "180px" : "400px"}
           left={isMobile ? "13%" : "26%"}
@@ -131,6 +134,7 @@ export default function Products() {
           alt=""
           src="/pote.png"
           width="160px"
+          display={{ base: "none", xl: "initial" }}
           h="100px"
           filter="drop-shadow(0px 0px 13px black)"
           position="absolute"
@@ -177,6 +181,7 @@ export default function Products() {
         <Image
           alt=""
           src="/bone.png"
+          display={{ base: "none", xl: "initial" }}
           width="165px"
           h="100px"
           transform="rotate(9deg)"
